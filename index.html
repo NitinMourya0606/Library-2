@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Custom favicon -->
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container" id="login-form">
+      <h1>Library Management System</h1>
+      <h2>Login</h2>
+      <div id="login-error" class="error-message"></div>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <div class="form-container" id="signup-form" style="display: none;">
+      <h1>Library Management System</h1>
+      <h2>Create Account</h2>
+      <div id="signup-error" class="error-message"></div>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEnrollment">Enrollment Number</label>
+          <input type="text" id="signupEnrollment" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" required>
+        </div>
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" id="signupConfirmPassword" required>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+
+    <div class="form-container" id="dashboard" style="display: none;">
+      <div class="dashboard-header">
+        <h1>Library Management System</h1>
+        <div class="user-info">
+          <span id="user-name">Welcome, User</span>
+          <button id="logout-btn" class="btn-logout">Logout</button>
+        </div>
+      </div>
+      
+      <div class="dashboard-content">
+        <h2>Dashboard</h2>
+        <p>Welcome to the Library Management System. This is your dashboard where you can manage books and borrowing activities.</p>
+        
+        <div class="dashboard-cards">
+          <div class="dashboard-card">
+            <h3>Books</h3>
+            <p>Manage your book inventory</p>
+            <button class="dashboard-button" onclick="window.location.href='books.html'">View Books</button>
+          </div>
+          
+          <div class="dashboard-card">
+            <h3>Members</h3>
+            <p>Manage library members</p>
+            <button class="dashboard-button">View Members</button>
+          </div>
+          
+          <div class="dashboard-card">
+            <h3>Borrowings</h3>
+            <p>Manage book borrowings</p>
+            <button class="dashboard-button">View Borrowings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  
+  <!-- Application Scripts -->
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html> 
