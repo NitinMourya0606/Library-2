@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    
+  }
+  
+  /* Header Section */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #0077b6;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Search Section */
+  .search-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #023e8a;
+    color: white;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+  }
+  
+  .search-bar input {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-bar .search-btn {
+    padding: 12px 20px;
+    background-color: #0077b6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Library Section */
+  .library {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .book-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .book-card {
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .borrow-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* About Us Section */
+.aboutus-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.aboutus-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.aboutus-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Help Section */
+.help-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.help-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.help-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.help-section a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.help-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+  
+  
